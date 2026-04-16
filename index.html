@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>File Hosting → Website Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>File Hosting → Website Demo</h1>
+    <p>Files are loaded from file hosting services and displayed by a website served from a web host.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Image (Cloudinary demo)</h2>
+      <p>Source: Cloudinary demo account (public sample)</p>
+      <img id="demo-image" src="https://res.cloudinary.com/demo/image/upload/w_600/sample.jpg" alt="Cloudinary sample">
+    </section>
+
+    <section>
+      <h2>PDF (file-examples.com)</h2>
+      <p>Source: file-examples.com (public sample)</p>
+      <iframe id="demo-pdf" src="https://file-examples.com/wp-content/uploads/2017/10/file-sample_150kB.pdf" width="700" height="450" title="Sample PDF"></iframe>
+    </section>
+
+    <section>
+      <h2>Replace with Your Files</h2>
+      <p>Upload files to a file host (Google Drive, Dropbox, Cloudinary, Terabox) and paste the public URLs below, then click <strong>Load URLs Above</strong>.</p>
+      <ul>
+        <li>Image URL: <code id="image-url">https://res.cloudinary.com/demo/image/upload/w_600/sample.jpg</code></li>
+        <li>PDF URL: <code id="pdf-url">https://file-examples.com/wp-content/uploads/2017/10/file-sample_150kB.pdf</code></li>
+      </ul>
+      <button id="update-btn">Load URLs Above</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
